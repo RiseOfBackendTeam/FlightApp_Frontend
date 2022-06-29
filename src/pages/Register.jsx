@@ -20,13 +20,13 @@ const Register = () => {
         <h1 className="form-title display-3">RegisterForm</h1>
         <form onSubmit={handleSubmit} >
           <div className="mb-3">
-            <label htmlFor="first-name" className="form-label">
+            <label htmlFor="username" className="form-label">
               Username
             </label>
             <input
               type="text"
               className="form-control"
-              id="first-name"
+              id="username"
               placeholder="Enter username.."
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -46,13 +46,13 @@ const Register = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="last-name" className="form-label">
+            <label htmlFor="first-name" className="form-label">
               First Name
             </label>
             <input
               type="text"
               className="form-control"
-              id="last-name"
+              id="first-name"
               placeholder="Enter your last firstname.."
               onChange={(e) => setFirstName(e.target.value)}
               required
@@ -86,13 +86,13 @@ const Register = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="password" className="form-label">
+            <label htmlFor="password2" className="form-label">
               Password2
             </label>
             <input
               type="password"
               className="form-control"
-              id="password"
+              id="password2"
               placeholder="Confirm your password.."
               onChange={(e) => setPassword2(e.target.value)}
               required
